@@ -28,3 +28,13 @@
         font-weight: 1000;
     }
   }
+
+  .bg-auriga-hijau{
+    background-color: #01303c;
+  }
+  .bg-auriga-biru{
+    background-color: #007580;
+  }
+  .text-auriga-biru{
+    color: #007580;
+  }
