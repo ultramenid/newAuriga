@@ -1,0 +1,30 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer utilities {
+    .h-v90 {
+        height: 95vh;
+    }
+    .h-hero{
+        height: 80vh;
+    }
+    .w-96 {
+        width: 28rem/* 384px */;
+    }
+    .w-higlight {
+        width: 34rem/* 384px */;
+    }
+    .h-gray-hero{
+        height: 40vh;
+    }
+    .font-verybold {
+        font-weight: 1000;
+    }
+  }
