@@ -5,9 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/ouput.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <title>Index</title>
 </head>
 <body class="font-judul">
+    <!-- {{-- topbar mobile --}} -->
+    <header class="bg-auriga-biru sticky top-0 z-50">
+        <div x-data="{ open: false }" class="px-6 py-4 bg-auriga-biru z-10 sm:hidden block">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white " viewBox="0 0 20 20" fill="currentColor" @click="open = true">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+              </svg>
+
+            <div class="fixed w-3/4 h-screen z-50 bg-auriga-biru inset-0 overflow-y-auto " x-show="open"
+            x-transition:enter="transition-all transform ease-out"
+            x-transition:enter-start="-translate-x-1/2 opacity-0"
+            x-transition:enter-end="translate-x-0 opacity-100"
+            x-transition:leave="transition-all transform ease-in"
+            x-transition:leave-start="translate-x-0 opacity-100"
+            x-transition:leave-end="-translate-x-1/2 opacity-0"
+            @click.outside="open = false"
+            x-cloak style="display: none !important">
+                <button class="absolute px-6 py-4 focus:outline-none text-white" @click="open = false">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " fill="white" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                </button>
+
+                <div class="mt-16 space-y-3">
+                    <div class=" px-6">
+                        <a href="#"   class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">home<a>
+                        <p class="border-b border-gray-300"></p>
+                    </div>
+                    <div class=" px-6">
+                        <a href="#"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">who we are<a>
+                        <p class="border-b border-gray-300"></p>
+                    </div>
+                    <div class=" px-6">
+                        <a href="#"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">our work<a>
+                        <p class="border-b border-gray-300"></p>
+                    </div>
+                    <div class=" px-6">
+                        <a href="#"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">resources<a>
+                        <p class="border-b border-gray-300"></p>
+                    </div>
+                    
+
+                    <div class="px-6 flex space-x-2 text-white  text-sm  bottom-10 fixed z-30">
+                        <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-white font-bold @endif">english</a>
+                        <div class="border-l border-gray-300"></div>
+                        <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-white font-bold @endif ">indonesia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 -py-2 sm:block hidden">
+            <div class="flex justify-between px-3">
+                <a></a>
+            </div>
+        </div>
+    </header>
+    <!-- topbar pc -->
     <section class="md:h-v90 h-full relative z-10">
         <div class="container mx-auto relative">
             <header class="md:flex items-center justify-between w-full py-12 hidden">
@@ -31,33 +90,35 @@
             
         </div>
         <div class="bg-auriga-biru absolute z-30  md:-bottom-80 -bottom-15 left-0  md:px-20 px-4 md:py-12 py-4 text-white md:w-4/12 w-full ">
-            <div class="flex space-x-4  items-center">
-                <h1 class="font-semibold md:text-xl text-md">article</h1>
-                <span class="font-semibold md:text-xl text-md">•</span>
-                <h1 class="font-semibold md:text-xl text-md">way kambas</h1>
-            </div>
-            <h1 class="md:mt-10 mt-2 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
-                karakter termasuk spasi
-                di sini jadi 3 baris
-            </h1>
-            <div class="mt-10">
-                <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                    destibus de omnihit volupist, si dipitempore,
-                    quiaerum quibus. Harciatur aborit fugiatusdae
-                    num reptatur</a>
-            </div>
-            <div class="rounded-full md:mt-12 mt-4 border-white border h-12 w-12 md:flex justify-center items-center px-4 py-4 hidden">
-                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                  
+            <div class="z-40">
+                <div class="flex space-x-4  items-center ">
+                    <h1 class="font-semibold md:text-xl text-md">[microsites]</h1>
+                   
+                </div>
+                <h1 class="md:mt-10 mt-2 md:text-3xl text-xl font-bold  ">Judul artikel maksimal 70
+                    karakter termasuk spasi
+                    di sini jadi 3 baris
+                </h1>
+                <div class="mt-10 ">
+                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
+                        destibus de omnihit volupist, si dipitempore,
+                        quiaerum quibus. Harciatur aborit fugiatusdae
+                        num reptatur</a>
+                </div>
+                <div class=" rounded-full md:mt-12 mt-4 border-white border h-12 w-12 md:flex justify-center items-center px-4 py-4 hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                      
+                </div>
             </div>
         </div>
-        <div class="absolute sm:z-10 z-40  md:-bottom-80 -bottom-15 right-0   text-white md:w-3/12 w-10/12">
-            <img src="assets/elemen.png" alt="auriga nusantara" class="">
+        <div class="absolute   md:-bottom-80 -bottom-15 right-0   text-white md:w-3/12 w-7/12">
+            <img src="assets/elemen.png" alt="auriga nusantara" class="sm:z-10 z-30">
         </div>
 
     </section>
+    
     <!-- dummy gray for hero -->
     <section class="bg-gray-200 h-gray-hero relative ">
     </section>
@@ -70,16 +131,14 @@
                     <div class="card">
                         <div class="card-header flex justify-center mx-4 -mt-24">
                             <img
-                                class="w-96 md:h-80 h-60"
+                                class="w-96 md:h-80 h-60 object-cover"
                                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                                 alt="tailwind-card-image"
                             />
                         </div>
                         <div class="card-body  md:w-96 w-full px-7">
                             <div class="flex space-x-4 mt-10  items-center text-gray-500">
-                                <h1 class="font-semibold md:text-xl text-md">activities</h1>
-                                <span class="font-semibold md:text-xl text-md">•</span>
-                                <h1 class="font-semibold md:text-xl text-md">sawit</h1>
+                                <h1 class="font-semibold md:text-xl text-md">event</h1>
                             </div>
                             <h1 class="mt-10 md:text-3xl text-xl font-bold  text-auriga-biru">Judul artikel maksimal 70
                                 karakter termasuk spasi
@@ -108,8 +167,6 @@
                         <div class="card-body md:w-96 w-full px-7">
                             <div class="flex space-x-4 mt-10 items-center text-gray-500">
                                 <h1 class="font-semibold md:text-xl text-md">activities</h1>
-                                <span class="font-semibold md:text-xl text-md">•</span>
-                                <h1 class="font-semibold md:text-xl text-sm">sawit</h1>
                             </div>
                             <h1 class="mt-10 sm:text-3xl text-xl font-bold  text-auriga-biru">Judul artikel maksimal 70
                                 karakter termasuk spasi
@@ -136,9 +193,7 @@
             </div>
             <div class="px-10">
                 <div class="flex space-x-4 sm:mt-10 mt-5 items-center text-gray-200">
-                    <h1 class="font-semibold sm:text-xl text-sm">activities</h1>
-                    <span class="font-semibold sm:text-xl text-sm">•</span>
-                    <h1 class="font-semibold sm:text-xl text-sm">sawit</h1>
+                    <h1 class="font-semibold sm:text-xl text-sm">spotlight</h1>
                 </div>
                 <h1 class="sm:mt-10 mt-5 sm:text-3xl text-xl font-bold text-white">Judul artikel maksimal 70
                     karakter termasuk spasi
@@ -163,9 +218,7 @@
             <!-- card -->
             <div class="bg-auriga-biru px-7 py-10">
                 <div class="flex space-x-4  items-center text-gray-200">
-                    <h1 class="font-semibold md:text-xl text-md">activities</h1>
-                    <span class="font-semibold md:text-xl text-md">•</span>
-                    <h1 class="font-semibold md:text-xl text-md">sawit</h1>
+                    <h1 class="font-semibold md:text-xl text-md">resources</h1>
                 </div>
                 <h1 class="mt-10 md:text-3xl text-xl font-bold text-white">Judul artikel maksimal 70
                     karakter termasuk spasi
@@ -180,11 +233,9 @@
             </div>
 
             <!-- card -->
-            <div class="bg-auriga-biru px-7 py-10">
+            <div class="bg-auriga-biru px-7 py-10 sm:block hidden">
                 <div class="flex space-x-4  items-center text-gray-200">
-                    <h1 class="font-semibold md:text-xl text-md">activities</h1>
-                    <span class="font-semibold md:text-xl text-md">•</span>
-                    <h1 class="font-semibold md:text-xl text-md">sawit</h1>
+                    <h1 class="font-semibold md:text-xl text-md">resources</h1>
                 </div>
                 <h1 class="mt-10 md:text-3xl text-xl font-bold text-white">Judul artikel maksimal 70
                     karakter termasuk spasi
@@ -203,7 +254,7 @@
     <!-- latest news -->
     <div class="md:py-20 py-4 max-w-6xl mx-auto px-4">
         <div class="w-full flex justify-between items-center text-auriga-biru">
-            <h1 class="font-verybold md:text-5xl text-xl">Latest News</h1>
+            <h1 class="font-verybold md:text-5xl text-xl">our work</h1>
             <div class="flex space-x-2 items-center">
                 <a href="#" class="font-bold md:text-xl text-xs">see all news</a>
                 <div class="md:w-8 md:h-8 w-4 h-4 rounded-full border-black border flex items-center justify-center">
@@ -222,9 +273,7 @@
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                 alt="">
                 <div class="flex space-x-4 mt-3 items-center text-gray-500">
-                    <h1 class="font-semibold md:text-xl text-md">activities</h1>
-                    <span class="font-semibold md:text-xl text-md">•</span>
-                    <h1 class="font-semibold md:text-xl text-md">sawit</h1>
+                    <h1 class="font-semibold md:text-xl text-md">kebun</h1>
                 </div>
                 <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
                     karakter termasuk spasi
@@ -237,16 +286,34 @@
                         num reptatur</a>
                 </div>
            </div>
-
+           <!-- card -->
             <div class="flex flex-col  text-auriga-biru">
                 <img  
                 class="md:w-80 w-full h-52 object-cover"                               
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                 alt="">
                 <div class="flex space-x-4 mt-3 items-center text-gray-500">
-                    <h1 class="font-semibold md:text-xl text-md">activities</h1>
-                    <span class="font-semibold md:text-xl text-md">•</span>
-                    <h1 class="font-semibold md:text-xl text-md">sawit</h1>
+                    <h1 class="font-semibold md:text-xl text-md">hukum</h1>
+                </div>
+                <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
+                    karakter termasuk spasi
+                    di sini jadi 3 baris
+                </h1>
+                <div class="md:mt-6 mt-3 ">
+                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
+                        destibus de omnihit volupist, si dipitempore,
+                        quiaerum quibus. Harciatur aborit fugiatusdae
+                        num reptatur</a>
+                </div>
+            </div>
+           <!-- card -->
+            <div class="flex flex-col  text-auriga-biru">
+                <img  
+                class="md:w-80 w-full h-52 object-cover"                               
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                alt="">
+                <div class="flex space-x-4 mt-3 items-center text-gray-500">
+                    <h1 class="font-semibold md:text-xl text-md">hutan & biodiversitas</h1>
                 </div>
                 <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
                     karakter termasuk spasi
@@ -260,15 +327,35 @@
                 </div>
             </div>
 
+            <!-- card -->
             <div class="flex flex-col  text-auriga-biru">
                 <img  
                 class="md:w-80 w-full h-52 object-cover"                               
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                 alt="">
                 <div class="flex space-x-4 mt-3 items-center text-gray-500">
-                    <h1 class="font-semibold md:text-xl text-md">activities</h1>
-                    <span class="font-semibold md:text-xl text-md">•</span>
-                    <h1 class="font-semibold md:text-xl text-md">sawit</h1>
+                    <h1 class="font-semibold md:text-xl text-md">tambang & energi</h1>
+                </div>
+                <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
+                    karakter termasuk spasi
+                    di sini jadi 3 baris
+                </h1>
+                <div class="md:mt-6 mt-3 ">
+                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
+                        destibus de omnihit volupist, si dipitempore,
+                        quiaerum quibus. Harciatur aborit fugiatusdae
+                        num reptatur</a>
+                </div>
+            </div>
+
+            <!-- card -->
+            <div class="flex flex-col  text-auriga-biru">
+                <img  
+                class="md:w-80 w-full h-52 object-cover"                               
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                alt="">
+                <div class="flex space-x-4 mt-3 items-center text-gray-500">
+                    <h1 class="font-semibold md:text-xl text-md">informasi & data</h1>
                 </div>
                 <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
                     karakter termasuk spasi
@@ -287,25 +374,7 @@
     <!-- video -->
     <div class=" py-10">
         <div class="px-4 max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 gap-10">
-            <!-- card -->
-            <div class="bg-auriga-biru h-96 flex flex-col justify-center sm:px-16 px-7 w-full">
-                <h1 class="text-white font-bold text-4xl">Visit Us on Vimeo</h1>
-                <div class="rounded-full mt-4 border-white text-white border h-12 w-12 md:flex justify-center items-center px-4 py-4 hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                      
-                </div>
-            </div>
-            <div class="bg-auriga-biru h-96 flex flex-col justify-center sm:px-16 px-7 w-full">
-                <h1 class="text-white font-bold text-4xl">Visit Us on Youtube</h1>
-                <div class="rounded-full mt-4 border-white text-white border h-12 w-12 md:flex justify-center items-center px-4 py-4 hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                      
-                </div>
-            </div>
+            
 
         </div>
     </div>
@@ -347,11 +416,11 @@
         </div>
         <nav class="flex  md:justify-end  justify-center w-full space-x-4 md:items-end items-start  text-auriga-biru">
             <div class="flex md:space-x-2 space-x-1">
-                <a href="#" class="text-md">Contact</a>
-                <a href="#" class="text-md">|</a>
-                <a href="#" class="text-md">Visit Us</a>
-                <a href="#" class="text-md">|</a>
-                <a href="#" class="text-md">Subscribe</a>
+                <a href="#" class="text-sm">Contact</a>
+                <a href="#" class="text-sm">|</a>
+                <a href="#" class="text-sm">Visit Us</a>
+                <a href="#" class="text-sm">|</a>
+                <a href="#" class="text-sm">Subscribe</a>
             </div>
             
             <div class="flex space-x-2 ">
@@ -380,10 +449,10 @@
             <p class="text-md md:w-7/12 w-full  text-auriga-biru">a data-driven advocacy and provocative think tank organization that works in forestry, species conservation, agriculture, and mining & energy that also combines law enforcement and public awareness in its approach
             </p>
             <nav class="flex md:justify-end justify-start w-full md:space-x-10 space-x-4 items-end  text-auriga-biru">
-                <a href="#" class="md:text-xl text-md font-bold">who we are</a>
-                <a href="#" class="md:text-xl text-md font-bold">our work</a>
-                <a href="#" class="md:text-xl text-md font-bold">resources</a>
-                <a href="#" class="md:text-xl text-md font-bold">microsites</a>
+                <a href="#" class="md:text-xl text-sm font-bold">who we are</a>
+                <a href="#" class="md:text-xl text-sm font-bold">our work</a>
+                <a href="#" class="md:text-xl text-sm font-bold">resources</a>
+                <a href="#" class="md:text-xl text-sm font-bold">microsites</a>
             </nav>
         </div>
     </footer>
