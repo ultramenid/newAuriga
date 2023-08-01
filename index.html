@@ -4,18 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="900"> -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="language" content="id" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Auriga is an Indonesian non-governmental organization that engages in an effort to conserve Indonesian natural resources and the environment to improve the quality of life of humankind. To achieve our goals, we are constantly carrying out investigative research, encouraging policy changes for better natural resources and environmental governance, as well as doing advocacy through legal mechanisms. Our organization welcomes everybody from any place to work with us, particularly those who have the same ideas and visions as us.">
+    <meta name="keywords" content="Auriga Nusantara, Auriga Nusantara">
+    <link rel="canonical" href="https://auriga.or.id/"/>
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Auriga Nusantara">
+    <meta name="googlebot-news" content="index, follow, follow" />
+    <meta name="googlebot" content="index, follow, follow" />
+    <meta name="coverage" content="Auriga Home">
+    <meta name="rating" content="General">
+
+    <meta name="thumbnailUrl" content="https://auriga.or.id/assets/images/logo2.jpg" itemprop="thumbnailUrl" />
+    <meta content="https://auriga.or.id/" itemprop="url" />
+    <meta itemprop="name" content="Auriga Nusantara">
+    <meta itemprop="description" content="Auriga is an Indonesian non-governmental organization that engages in an effort to conserve Indonesian natural resources and the environment to improve the quality of life of humankind. To achieve our goals, we are constantly carrying out investigative research, encouraging policy changes for better natural resources and environmental governance, as well as doing advocacy through legal mechanisms. Our organization welcomes everybody from any place to work with us, particularly those who have the same ideas and visions as us.">
+    <meta itemprop="image" content="https://auriga.or.id/assets/images/logo2.jpg">
+    <meta name="geo.country" content="id" />
+    <meta http-equiv="content-language" content="En-en" />
+    <meta name="geo.placename" content="Indonesia" />
+    <meta name="copyright" content="https://auriga.or.id/">
+    <meta name="creation date" content="2020">
+
+    <meta property="og:title" content="Auriga Nusantara" />
+    <meta property="og:description" content="Auriga is an Indonesian non-governmental organization that engages in an effort to conserve Indonesian natural resources and the environment to improve the quality of life of humankind. To achieve our goals, we are constantly carrying out investigative research, encouraging policy changes for better natural resources and environmental governance, as well as doing advocacy through legal mechanisms. Our organization welcomes everybody from any place to work with us, particularly those who have the same ideas and visions as us." />
+    <meta property="og:type" content="Home" />
+    <meta property="og:site_name" content="https://auriga.or.id/" />
+    <meta property="og:url" content="https://auriga.or.id/" />
+    <meta property="og:image" content="https://auriga.or.id/assets/images/logo2.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://auriga.or.id/assets/images/logo2.jpg" />
+    <meta name="twitter:title" content="Auriga Nusantara" />
+    <meta name="twitter:description" content="Auriga is an Indonesian non-governmental organization that engages in an effort to conserve Indonesian natural resources and the environment to improve the quality of life of humankind. To achieve our goals, we are constantly carrying out investigative research, encouraging policy changes for better natural resources and environmental governance, as well as doing advocacy through legal mechanisms. Our organization welcomes everybody from any place to work with us, particularly those who have the same ideas and visions as us." />
+    <meta name="twitter:url" content="https://auriga.or.id/" />
+    <meta name="twitter:site" content="@aurigaorid" />
+    <meta name="twitter:creator" content="@aurigaorid'">
+
+    <meta name="zoom-domain-verification" content="ZOOM_verify_lYg8uF-mQMuVzukYQKxkdA">
+    <meta name="google-site-verification" content="EoQoyqS1LSr368pMKv45XcUc3kXgbI9hEjYuCCCrzwk" />
     <link href="style/ouput.css" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50C30PVFRB"></script>
 
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-50C30PVFRB');
+    </script>
     <title>Index</title>
 </head>
 <body class="font-judul">
     <!-- {{-- nav mobile --}} -->
     <header class="bg-auriga-biru sticky top-0 z-50">
         <div x-data="{ open: false }" class="px-6 py-4 bg-auriga-biru z-10 sm:hidden block">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white " viewBox="0 0 20 20" fill="currentColor" @click="open = true">
-                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-              </svg>
+            <div class="flex justify-between items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white " viewBox="0 0 20 20" fill="currentColor" @click="open = true">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                  </svg>
+
+                  <div class="flex space-x-1 text-auriga-biru text-sm">
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-auriga-hijau font-bold @endif">EN</a>
+                    <div class="border-l border-auriga-biru"></div>
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-auriga-hijau font-bold @endif ">ID</a>
+                </div>
+            </div>
+            
 
             <div class="fixed w-3/4 h-screen z-50 bg-auriga-biru inset-0 overflow-y-auto " x-show="open"
             x-transition:enter="transition-all transform ease-out"
@@ -34,11 +96,11 @@
 
                 <div class="mt-16 space-y-3">
                     <div class=" px-6">
-                        <a href="#"   class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">home<a>
+                        <a href="https://auriga.or.id/"   class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">home<a>
                         <p class="border-b border-gray-300"></p>
                     </div>
                     <div class=" px-6">
-                        <a href="#"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">who we are<a>
+                        <a href="https://auriga.or.id/who_we_are"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">who we are<a>
                         <p class="border-b border-gray-300"></p>
                     </div>
                     <div class=" px-6">
@@ -46,7 +108,7 @@
                         <p class="border-b border-gray-300"></p>
                     </div>
                     <div class=" px-6">
-                        <a href="#"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">resources<a>
+                        <a href="https://auriga.or.id/resources/report"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">resources<a>
                         <p class="border-b border-gray-300"></p>
                     </div>
                     
@@ -68,189 +130,175 @@
     </header>
     <!-- nav pc -->
     <section class="md:h-v90 h-full relative z-10">
-        <div class="container mx-auto relative">
-            <header class="md:flex items-center justify-between w-full py-12 hidden">
+        <div class="max-w-7xl mx-auto relative">
+            <div class="sm:flex hidden justify-end mt-6">
+                <div class="flex space-x-1 text-auriga-biru text-sm">
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-auriga-hijau font-bold @endif">EN</a>
+                    <div class="border-l border-auriga-biru"></div>
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-auriga-hijau font-bold @endif ">ID</a>
+                </div>
+            </div>
+            <header class="md:flex items-center justify-between w-full mb-6 hidden">
                 <!-- logo -->
                 <div class="w-full">
-                    <img src="assets/logo.png" alt="Auriga Nusantara" class="h-28">
+
+                    <img src="assets/logoauriga.png" alt="Auriga Nusantara" class="h-20">
                 </div>
 
                 <!-- navigation -->
                 <nav class="flex justify-end w-full space-x-10 text-auriga-biru">
-                    <a href="#" class="text-xl font-bold">who we are</a>
+                    <a href="https://auriga.or.id/" class="text-xl font-bold">home</a>
+                    <a href="https://auriga.or.id/who_we_are" class="text-xl font-bold">who we are</a>
                     <a href="#" class="text-xl font-bold">our work</a>
-                    <a href="#" class="text-xl font-bold">resources</a>
-                    <a href="#" class="text-xl font-bold">microsites</a>
+                    <a href="https://auriga.or.id/resources/report" class="text-xl font-bold">resources</a>
                 </nav>
             </header>
 
             <div class="">
-                <img src="https://auriga.or.id/cms/uploads/library/1/7/2/172.jpg" alt="" class="w-full md:h-hero h-full  object-cover z-20 md:mt-3 mt-0 md:absolute">
+                <img src="assets/badakwwf.jpg" alt="" class="w-full md:h-hero sm:h-full h-50  object-cover z-20 md:mt-3 mt-0 md:absolute">
             </div>
             
         </div>
-        <div class="bg-auriga-biru absolute z-30  md:-bottom-80 -bottom-15 left-0  md:px-20 px-4 md:py-12 py-4 text-white md:w-4/12 w-full ">
+        <div class="bg-auriga-biru absolute z-30  md:-bottom-52 -bottom-15 left-0  md:px-20 px-4 md:py-8 py-4 text-white md:w-4/12 w-full ">
             <div class="z-40">
                 <div class="flex space-x-4  items-center ">
                     <h1 class="font-semibold md:text-xl text-md">press release</h1>
                    
                 </div>
-                <h1 class="md:mt-10 mt-2 md:text-3xl text-xl font-bold  ">CSO Joint Statement for EU to Adopt a Strong Regulation on Deforestation-Free Products</h1>
-                <div class="mt-10 ">
-                    <a>140+ NGOs urge EU institutions to give teeth to EU deforestation law</a>
+                <h1 class="md:mt-6 mt-2 md:text-2xl text-xl font-bold  "><a href="https://auriga.or.id/press_release/detail/45/critical-javan-rhinos-need-strategic-yet-effective-intervention">Critical, Javan Rhinos Need Strategic Yet Effective Intervention</a></h1>
+                <div class="mt-4">
+                    <a>All parties should encourage the MoEF to immediately conduct a comprehensive evaluation of Javan rhino conservation efforts in Ujung Kulon National Park.</a>
                 </div>
-                <div class=" rounded-full md:mt-12 mt-4 border-white border h-12 w-12 md:flex justify-center items-center px-4 py-4 hidden">
+                <a href="https://auriga.or.id/press_release/detail/45/critical-javan-rhinos-need-strategic-yet-effective-intervention" class=" rounded-full md:mt-6 mt-4 border-white border h-12 w-12 md:flex justify-center items-center px-4 py-4 hidden">
                     <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
                       
-                </div>
+                </a>
             </div>
         </div>
-        <div class="absolute   md:-bottom-80 -bottom-15 right-0   text-white md:w-3/12 w-7/12">
+        <div class="absolute   md:-bottom-72 -bottom-15 right-0   text-white md:w-3/12 w-7/12">
             <img src="assets/elemen.png" alt="auriga nusantara" class="sm:z-10 z-30">
         </div>
 
     </section>
     
     <!-- dummy gray for hero -->
-    <section class="bg-gray-200 h-gray-hero relative ">
+    <section class="bg-gray-200 h-gray-hero sm:-mt-32">
     </section>
 
     <!-- event / activities -->
-    <div class="bg-gray-200 md:py-28 py-14">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-36">
+    <div class="bg-gray-200 md:py-36 py-14 ">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-12">
             <!-- card -->
             <div class=" px-6 bg-white py-6 ">
-                    <div class="card">
+                    <div class="card flex flex-col">
                         <div class="card-header flex justify-center mx-4 -mt-24">
                             <img
-                                class="w-96 md:h-80 h-60 object-cover"
-                                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                                class="sm:w-99 w-full sm:h-72 h-40 object-cover"
+                                src="assets/kebakaran.jpeg"
                                 alt="tailwind-card-image"
                             />
                         </div>
-                        <div class="card-body  md:w-96 w-full px-7">
-                            <div class="flex space-x-4 mt-10  items-center text-gray-500">
+                        <div class="card-body md:w-96 w-full px-7">
+                            <div class="flex space-x-4 mt-6 items-center text-gray-500">
                                 <h1 class="font-semibold md:text-xl text-md">event</h1>
                             </div>
-                            <h1 class="mt-10 md:text-3xl text-xl font-bold  text-auriga-biru">Judul artikel maksimal 70
-                                karakter termasuk spasi
-                                di sini jadi 3 baris
+                            <h1 class="mt-6 sm:text-3xl text-xl font-bold  text-auriga-biru">A Forest City As The Capital: Is It Possible ? 
                             </h1>
-                            <div class="mt-10  text-auriga-biru">
-                                <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                                    destibus de omnihit volupist, si dipitempore,
-                                    quiaerum quibus. Harciatur aborit fugiatusdae
-                                    num reptatur</a>
+                            <div class="mt-6  text-auriga-biru">
+                                <a class="font-bold">December 2021</a><span> | </span><a>Ibu Kota Negara dikhawatirkan menambah deforestasi. Padahal, Indonesia berkomitmen turut berperan mengendalikan pemanasan global.
+                                </a>
                             </div>
+                            
                         </div>
                     </div>
             </div>
 
             <!-- card -->
-            <div class="relative px-6 bg-white py-6 col-span-1 gap-10">
-                    <div class="card flex flex-col">
-                        <div class="card-header flex justify-center mx-4 -mt-24">
-                            <img
-                                class="w-96 md:h-80 h-60 object-cover"
-                                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                                alt="tailwind-card-image"
-                            />
+            <div class=" px-6 bg-white py-6 ">
+                <div class="card">
+                    <div class="card-header flex justify-center mx-4 sm:-mt-24 ">
+                        <img
+                            class="sm:w-99 w-full sm:h-72 h-40 object-cover"
+                            src="https://pasopati.id/uploads/ngopini/1650317886_625dda3e83760.jpeg"
+                            alt="tailwind-card-image"
+                        />
+                    </div>
+                    <div class="card-body  md:w-96 w-full px-7">
+                        <div class="flex space-x-4 mt-6  items-center text-gray-500">
+                            <h1 class="font-semibold md:text-xl text-md">activities</h1>
                         </div>
-                        <div class="card-body md:w-96 w-full px-7">
-                            <div class="flex space-x-4 mt-10 items-center text-gray-500">
-                                <h1 class="font-semibold md:text-xl text-md">activities</h1>
-                            </div>
-                            <h1 class="mt-10 sm:text-3xl text-xl font-bold  text-auriga-biru">Judul artikel maksimal 70
-                                karakter termasuk spasi
-                                di sini jadi 3 baris
-                            </h1>
-                            <div class="mt-10  text-auriga-biru">
-                                <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                                    destibus de omnihit volupist, si dipitempore,
-                                    quiaerum quibus. Harciatur aborit fugiatusdae
-                                    num reptatur</a>
-                            </div>
-                            
+                        <h1 class="mt-6 md:text-3xl text-xl font-bold  text-auriga-biru">
+                            <a href="https://pasopati.id/ngopini/ibu-kota-negara-dalam-hutan-mungkinkah">A Forest City As The Capital: Is It Possible ? </a>
+                        </h1>
+                        <div class="mt-6  text-auriga-biru">
+                            <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Ibu Kota Negara dikhawatirkan menambah deforestasi. Padahal, Indonesia berkomitmen turut berperan mengendalikan pemanasan global.</a>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- highlight -->
     <div class="bg-auriga-hijau py-20 relative">
-        <div class="px-4 max-w-6xl mx-auto grid sm:grid-cols-2 grid-cols-1 gap-10 z-20">
-            <div>
-                <img src="assets/img/higlight.jpg" alt="" class="w-higlight sm:h-96 h-60 object-cover">
+        <div class="px-4 max-w-6xl mx-auto grid sm:grid-cols-5 grid-cols-1 gap-10 ">
+            <div class="sm:col-span-3 col-span-1">
+                <img src="assets/konpres.jpeg" alt="" class="w-full sm:h-96 h-60 object-cover z-20">
             </div>
-            <div class="px-10">
-                <div class="flex space-x-4 sm:mt-10 mt-5 items-center text-gray-200">
+            <div class="px-10 sm:col-span-2 col-span-1">
+                <div class="flex space-x-4 sm:mt-8 mt-5 items-center text-gray-200">
                     <h1 class="font-semibold sm:text-xl text-sm">spotlight</h1>
                 </div>
-                <h1 class="sm:mt-10 mt-5 sm:text-3xl text-xl font-bold text-white">Judul artikel maksimal 70
-                    karakter termasuk spasi
-                    di sini jadi 3 baris
+                <h1 class="sm:mt-10 mt-5 sm:text-3xl text-xl font-bold text-white">
+                    <a href="https://www.youtube.com/watch?v=lW9g-VEHBGE">Konferensi Pers: Badak Jawa di Ujung Tanduk</a>
                 </h1>
                 <div class="sm:mt-10 mt-5 text-white">
-                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                        destibus de omnihit volupist, si dipitempore,
-                        quiaerum quibus. Harciatur aborit fugiatusdae
-                        num reptatur</a>
+                    <a class="font-bold">APRIL 2023</a><span> | </span><a>Investigasi Auriga selama beberapa bulan terakhir mendapati banyak temuan lainnya yang mengindikasikan krisis yang sedang mengancam kepunahan badak jawa, yang saat ini hanya hidup di Taman Nasional Ujung Kulon (Banten), Simak selengkapnya pada konferensi pers ini.</a>
                 </div>
             </div>
         </div>
-        <div class="absolute z-10  bottom-0 left-0   text-white w-3/12">
-            <img src="assets/elemen-light.png" alt="auriga nusantara" class="">
+        <div class="absolute   bottom-0 left-0   text-white w-3/12">
+            <img src="assets/elemen-light.png" alt="auriga nusantara" class="z-10">
         </div>
     </div> 
     
-    <!-- report -->
+    <!-- press -->
     <div class="md:py-20 py-10">
         <div class="px-4 max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 gap-10">
             <!-- card -->
             <div class="bg-auriga-biru px-7 py-10">
                 <div class="flex space-x-4  items-center text-gray-200">
-                    <h1 class="font-semibold md:text-xl text-md">resources</h1>
+                    <h1 class="font-semibold md:text-xl text-md">press release</h1>
                 </div>
-                <h1 class="mt-10 md:text-3xl text-xl font-bold text-white">Judul artikel maksimal 70
-                    karakter termasuk spasi
-                    di sini jadi 3 baris
+                <h1 class="mt-10 md:text-3xl text-xl font-bold text-white">CSO Joint Statement for EU to Adopt a Strong Regulation on Deforestation-Free Products
                 </h1>
                 <div class="mt-10 text-white">
-                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                        destibus de omnihit volupist, si dipitempore,
-                        quiaerum quibus. Harciatur aborit fugiatusdae
-                        num reptatur</a>
+                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>140+ NGOs urge EU institutions to give teeth to EU deforestation law</a>
                 </div>
             </div>
 
             <!-- card -->
             <div class="bg-auriga-biru px-7 py-10 sm:block hidden">
                 <div class="flex space-x-4  items-center text-gray-200">
-                    <h1 class="font-semibold md:text-xl text-md">resources</h1>
+                    <h1 class="font-semibold md:text-xl text-md">press release</h1>
                 </div>
-                <h1 class="mt-10 md:text-3xl text-xl font-bold text-white">Judul artikel maksimal 70
-                    karakter termasuk spasi
-                    di sini jadi 3 baris
+                <h1 class="mt-10 md:text-3xl text-xl font-bold text-white">Communities Urge FSC to Ensure Implementation of Full Remedies for Their Damaged Territories
                 </h1>
                 <div class="mt-10 text-white">
-                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                        destibus de omnihit volupist, si dipitempore,
-                        quiaerum quibus. Harciatur aborit fugiatusdae
-                        num reptatur</a>
+                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>FSC decisions and policies would affect the management of the world's forests, including Indonesia. Would the conditions faced by the community be resolved, or even get worse.</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- latest news -->
+    <!-- reports -->
     <div class="md:py-20 py-4 max-w-6xl mx-auto px-4">
         <div class="w-full flex justify-between items-center text-auriga-biru">
-            <h1 class="font-verybold md:text-5xl text-xl">our work</h1>
+            <h1 class="font-verybold md:text-5xl text-xl">reports</h1>
             <div class="flex space-x-2 items-center">
-                <a href="#" class="font-bold md:text-xl text-xs">see all news</a>
+                <a href="https://auriga.or.id/resources/report" class="font-bold md:text-xl text-xs">see all reports</a>
                 <div class="md:w-8 md:h-8 w-4 h-4 rounded-full border-black border flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="md:w-3 w-2 md:h-3 h-2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -261,180 +309,137 @@
         </div>
         <div class="grid md:grid-cols-3 grid-cols-1 gap-10 md:mt-12 mt-6">
            <!-- card -->
-           <div class="flex flex-col  text-auriga-biru">
-                <img  
-                class="md:w-80 w-full h-52 object-cover"                               
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                alt="">
-                <div class="flex space-x-4 mt-3 items-center text-gray-500">
-                    <h1 class="font-semibold md:text-xl text-md">kebun</h1>
-                </div>
-                <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
-                    karakter termasuk spasi
-                    di sini jadi 3 baris
-                </h1>
-                <div class="md:mt-6 mt-3 ">
-                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                        destibus de omnihit volupist, si dipitempore,
-                        quiaerum quibus. Harciatur aborit fugiatusdae
-                        num reptatur</a>
-                </div>
-           </div>
-           <!-- card -->
-            <div class="flex flex-col  text-auriga-biru">
-                <img  
-                class="md:w-80 w-full h-52 object-cover"                               
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                alt="">
-                <div class="flex space-x-4 mt-3 items-center text-gray-500">
-                    <h1 class="font-semibold md:text-xl text-md">hukum</h1>
-                </div>
-                <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
-                    karakter termasuk spasi
-                    di sini jadi 3 baris
-                </h1>
-                <div class="md:mt-6 mt-3 ">
-                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                        destibus de omnihit volupist, si dipitempore,
-                        quiaerum quibus. Harciatur aborit fugiatusdae
-                        num reptatur</a>
-                </div>
-            </div>
-           <!-- card -->
-            <div class="flex flex-col  text-auriga-biru">
-                <img  
-                class="md:w-80 w-full h-52 object-cover"                               
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                alt="">
-                <div class="flex space-x-4 mt-3 items-center text-gray-500">
-                    <h1 class="font-semibold md:text-xl text-md">hutan & biodiversitas</h1>
-                </div>
-                <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
-                    karakter termasuk spasi
-                    di sini jadi 3 baris
-                </h1>
-                <div class="md:mt-6 mt-3 ">
-                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                        destibus de omnihit volupist, si dipitempore,
-                        quiaerum quibus. Harciatur aborit fugiatusdae
-                        num reptatur</a>
-                </div>
+            <div class=" shadow-2xl">
+                <a href="https://auriga.or.id/flipbooks/report/en/89">
+                    <img class="h-full w-full" src="https://auriga.or.id/cms/uploads/library/2/1/3/213.png" alt="Auriga Nusantara">
+                </a>
             </div>
 
-            <!-- card -->
-            <div class="flex flex-col  text-auriga-biru">
-                <img  
-                class="md:w-80 w-full h-52 object-cover"                               
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                alt="">
-                <div class="flex space-x-4 mt-3 items-center text-gray-500">
-                    <h1 class="font-semibold md:text-xl text-md">tambang & energi</h1>
-                </div>
-                <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
-                    karakter termasuk spasi
-                    di sini jadi 3 baris
-                </h1>
-                <div class="md:mt-6 mt-3 ">
-                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                        destibus de omnihit volupist, si dipitempore,
-                        quiaerum quibus. Harciatur aborit fugiatusdae
-                        num reptatur</a>
-                </div>
+            <div class=" shadow-2xl">
+                <a href="https://auriga.or.id/flipbooks/report/en/86">
+                    <img class="h-full w-full" src="https://auriga.or.id/cms/uploads/library/2/0/9/209.png" alt="Auriga Nusantara">
+                </a>
             </div>
 
-            <!-- card -->
-            <div class="flex flex-col  text-auriga-biru">
-                <img  
-                class="md:w-80 w-full h-52 object-cover"                               
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                alt="">
-                <div class="flex space-x-4 mt-3 items-center text-gray-500">
-                    <h1 class="font-semibold md:text-xl text-md">informasi & data</h1>
-                </div>
-                <h1 class="md:mt-6 mt-3 md:text-3xl text-xl font-bold ">Judul artikel maksimal 70
-                    karakter termasuk spasi
-                    di sini jadi 3 baris
-                </h1>
-                <div class="md:mt-6 mt-3 ">
-                    <a class="font-bold">NOVEMBER 2022</a><span> | </span><a>Xerundistius ipsum nulpa
-                        destibus de omnihit volupist, si dipitempore,
-                        quiaerum quibus. Harciatur aborit fugiatusdae
-                        num reptatur</a>
-                </div>
+            <div class=" shadow-2xl">
+                <a href="https://auriga.or.id/flipbooks/report/en/75">
+                    <img class="h-full w-full" src="https://auriga.or.id/cms/uploads/library/1/8/3/183.jpg" alt="Auriga Nusantara">
+                </a>
             </div>
+
+            <div class=" shadow-2xl">
+                <a href="https://auriga.or.id/flipbooks/report/en/73">
+                    <img class="h-full w-full" src="https://auriga.or.id/cms/uploads/library/1/4/1/141.png" alt="Auriga Nusantara">
+                </a>
+            </div>
+            
+            <div class=" shadow-2xl">
+                <a href="https://auriga.or.id/flipbooks/report/en/74">
+                    <img class="h-full w-full" src="https://auriga.or.id/cms/uploads/library/1/4/3/143.png" alt="Auriga Nusantara">
+                </a>
+            </div>
+
+            <div class=" shadow-2xl">
+                <a href="https://auriga.or.id/flipbooks/report/en/71">
+                    <img class="h-full w-full" src="https://auriga.or.id/cms/uploads/library/1/3/5/135.PNG" alt="Auriga Nusantara">
+                </a>
+            </div>
+
+            
         </div>
     </div>
 
     <!-- video -->
-    <div class=" py-10">
-        <div class="px-4 max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 gap-10">
-            
-
+    <div class="max-w-4xl mx-auto  py-10 px-4 ">
+        <div class="aspect-w-16 aspect-h-9">
+            <iframe src="https://www.youtube.com/embed/o8mTtQg1JM4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <h1 class="text-center mt-4 font-bold text-2xl">Alex Waisimon: Birdwatching menjaga hutan Jayapura</h1>
+        <p class="mt-2">Menjaga cenderawasih tentu harus melindungi juga pohon bernaungnya. Menjaga pohon bernaungnya, ya, tentulah pula menjaga hutannya. Demikian seterusnya hingga seluruh hutan terjaga terlindungi. Lebih dari itu, bahkan juga menjadi sumber penghasilan, termasuk bagi penduduk Nimbokrang, satu kecamatan di Kabupaten Jayapura di mana dia tinggal.</p>
+        <p>Namun demikian, ceritera belum usai. Cenderawasih butuh area yang cukup luas untuk beraktivitas. Delapan ribu hektare tidak cukup luas untuk itu. Sementara, pemerintah masih membuka ruang izin konversi terhadap hutan di sekitarnya, termasuk izin konversi hutan menjadi kebun sawit PT Permata Nusa Mandiri (PNM) yang berbatasan langsung dengan area birdwatching ini.</p>
     </div>
 
-    <section>
-        <div class="max-w-4xl mx-auto flex justify-center items-center relative">
-            <img src="assets/img/tinus.jpg" alt="">
-            <div class="z-10 w-full h-full  absolute  flex flex-col justify-center items-center sm:mt-60 mt-20   text-white">
-                <h1 class="sm:text-4xl text-xl font-bold">Yustinus Seno</h1>
-                <p>Persiapan mapbiomas koleksi 2</p>
-            </div>
-            <div class="w-full h-full flex justify-center absolute z-20 items-center text-white hover:bg-black hover:bg-opacity-30 cursor-pointer">
-                <div class="rounded-full w-12 h-12 border border-white flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                      </svg>
-                      
-                </div>
-            </div>
-        </div>
-        <div class="px-4 max-w-4xl mx-auto flex justify-end mt-1 items-center text-auriga-biru">
-            <p>(Credit: Yudi Nofiandi/Auriga Nusantara)</p>
-        </div>
-        <div class="px-4 max-w-4xl mx-auto  items-center mt-14  text-auriga-biru">
-            <a class="font-semibold">NOVEMBER 2022</a> | Xerundistius ipsum nulpa destibus de omnihit volupist, si
-            dipitempore, quiaerum quibus. Harciatur aborit fugiatusdae num reptaturSitius ratem
-            facepellatur sunt ma alique nonsecestis etur, culpa qui sinctot atemolorum quis Totae.
-            Ut incti incto qui corro cor rererat emodias itatiatquis dipis doluptat que sitatec
-            aecerit landem illiatur? Ovitis debit, quisit lab intibusam harumquundae omniand
-            itiusam inus, occupta tionsed quam velestis culluptatium restio. Uptas eum harum.
-        </div>
-    </section>
+    
     
 
     <!-- socmed -->
-    <div class="max-w-7xl mx-auto flex md:flex-row flex-col justify-between mt-24 space-y-12 px-4">
+    <div class="max-w-7xl mx-auto flex md:flex-row flex-col md:space-y-0 space-y-10 justify-between mt-24  px-4 items-center mb-6">
         <div class="w-full flex md:justify-start justify-center">
-            <img src="assets/logo.png" alt="Auriga Nusantara" class="h-20">
+            <img src="assets/logoauriga.png" alt="Auriga Nusantara" class="h-20">
         </div>
-        <nav class="flex  md:justify-end  justify-center w-full space-x-4 md:items-end items-start  text-auriga-biru">
+        <nav class="md:space-y-0 space-y-2 flex md:flex-row flex-col  md:justify-end  justify-center w-full space-x-4 items-center  text-auriga-biru">
             <div class="flex md:space-x-2 space-x-1">
-                <a href="#" class="text-sm">Contact</a>
-                <a href="#" class="text-sm">|</a>
-                <a href="#" class="text-sm">Visit Us</a>
+                <a href="mailto:info@auriga.or.id" class="text-sm">Contact</a>
                 <a href="#" class="text-sm">|</a>
                 <a href="#" class="text-sm">Subscribe</a>
             </div>
             
-            <div class="flex space-x-2 ">
-                <div class=" bg-black rounded-full border border-black px-1 py-1 flex items-center">
-                    <img src="assets/ig.png" alt="" class="w-4">
+            <div class="flex space-x-2">
+                <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                    <a href="https://www.instagram.com/auriga_id/">
+                        <img src="assets/ig.png" alt="" class="w-5 h-5">
+                    </a>
                 </div>
-                <div class=" bg-black rounded-full border border-black px-1 py-1 flex items-center">
-                    <img src="assets/facebook.svg" alt="" class="w-4">
+                <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                    <a href="https://www.facebook.com/auriganusantara">
+                        <img src="assets/facebook.svg" alt="" class="w-5 h-5">
+                    </a>
                 </div>
-                <div class=" bg-black rounded-full border border-black px-1 py-1 flex items-center">
-                    <img src="assets/twitter.svg" alt="" class="w-4">
+                <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                    <a href="https://mobile.twitter.com/aurigaorid">
+                        <img src="assets/twitter.svg" alt="" class="w-5 h-5">
+                    </a>
                 </div>
-                <div class=" bg-black rounded-full border border-black px-1 py-1 flex items-center">
-                    <img src="assets/twitter.svg" alt="" class="w-4">
+                <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                    <a href="https://www.tiktok.com/@auriga_id">
+                        <img src="assets/tiktok.png" alt="" class="w-5 h-5">
+                    </a>
                 </div>
-                <div class=" bg-black rounded-full border border-black px-1 py-1 flex items-center">
-                    <img src="assets/twitter.svg" alt="" class="w-4">
+                <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                    <a href="https://www.linkedin.com/company/auriga-nusantara/">
+                        <img src="assets/linkedin.png" alt="" class="w-5 h-5">
+                    </a>
                 </div>
             </div>
         </nav>
+    </div>
+
+    <!-- microsites -->
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-7 grid-cols-1 gap-5">
+        <div class="col-span-1 px-4 py-4 bg-gray-200 ">
+            <img src="https://gakkum-sda.id/img/logo/Footer-05.png" alt="Auriga Nusantara" class="">
+            <p class="text-xs">Reforestasi pada 1.300 hektare ilalang di Way Kambas, Lampung. Program kerja sama Auriga Nusantara dengan Balai Taman Nasional Way Kambas.</p>
+        </div>
+
+        <div class="col-span-1 px-4 py-4 bg-gray-200 ">
+            <img src="https://gakkum-sda.id/img/logo/Footer-03.png" alt="Auriga Nusantara" class="">
+            <p class="text-xs">Mendokumentasikan ancaman terhadap pembela lingkungan. Juga berisi informasi yang relevan dengan peningkatan keselamatan pembela lingkungan.</p>
+        </div>
+
+        <div class="col-span-1 px-4 py-4 bg-gray-200 ">
+            <img src="https://gakkum-sda.id/img/logo/GakkumWarna.png" alt="Auriga Nusantara" class="">
+            <p class="text-xs">Selain berisi aktivitas Auriga Nusantara yang terkait, situs ini juga menyajikan informasi dan diskursus perihal penegakan hukum sumber daya alam.</p>
+        </div>
+
+        <div class="col-span-1 px-4 py-4 bg-gray-200 ">
+            <img src="https://gakkum-sda.id/img/logo/Footer-04.png" alt="Auriga Nusantara" class="">
+            <p class="text-xs">Suara kritis dan tunjuk-hidung mengenai kehutanan, persawitan, dan pertambangan demi mengeliminir praktik dan kebijakan destruktif terhadap biodiversitas.</p>
+        </div>
+
+        <div class="col-span-1 px-4 py-4 bg-gray-200 ">
+            <img src="https://gakkum-sda.id/img/logo/Footer-06.png" alt="Auriga Nusantara" class="">
+            <p class="text-xs">Ruang informasi dan dialog persawitan. Mendorong pemajuan & pertukaran dan pengetahuan demi tatakelola sawit yang lebih baik.</p>
+        </div>
+
+        <div class="col-span-1 px-4 py-4 bg-gray-200 ">
+            <img src="https://mapbiomas.nusantara.earth/assets/images/logo.png" alt="Auriga Nusantara" class="">
+            <p class="text-xs mt-4">Platform yang menyajikan dinamika tutupan lahan Indonesia. Berisi informasi 10 kelas tutupan lahan, baik data, tampilan, hingga transisi antar-tutupan.</p>
+        </div>
+
+        <div class="col-span-1 px-4 py-4 bg-gray-200 ">
+            <img src="https://gakkum-sda.id/img/logo/Footer-02.png" alt="Auriga Nusantara" class="">
+            <p class="text-xs">Mendorong Indonesia keluar dari energi kotor batubara. Berisi informasi relevan dari negara-negara lain, dan perkembangan terkait di dalam negeri.</p>
+        </div>
     </div>
 
     <!-- footer -->
@@ -446,10 +451,27 @@
                 <a href="#" class="md:text-xl text-sm font-bold">who we are</a>
                 <a href="#" class="md:text-xl text-sm font-bold">our work</a>
                 <a href="#" class="md:text-xl text-sm font-bold">resources</a>
-                <a href="#" class="md:text-xl text-sm font-bold">microsites</a>
             </nav>
         </div>
     </footer>
+
+
+    <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
+        <div class="fixed z-50 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })">
+            <div class="sm:px-4 px-2 sm:py-4 py-2 border border-white  bg-auriga-biru flex items-center justify-center">
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                  </svg>
+                  
+            </div>
+        </div>
+    </div>
+
     
 </body>
 </html>

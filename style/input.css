@@ -22,7 +22,7 @@
         width: 34rem/* 384px */;
     }
     .h-gray-hero{
-        height: 50vh;
+        height: 40vh;
     }
     .font-verybold {
         font-weight: 1000;
@@ -37,4 +37,15 @@
   }
   .text-auriga-biru{
     color: #007580;
+  }
+  .text-auriga-hijau{
+    color: #01303c;
+  }
+
+  .w-99 {
+    width: 35rem/* 384px */;
+  }
+
+  .h-99 {
+    width: 450px/* 384px */;
   }

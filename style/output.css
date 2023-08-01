@@ -712,20 +712,12 @@ video {
   margin-top: 6rem;
 }
 
-.-mt-14{
-  margin-top: -3.5rem;
+.-mt-40{
+  margin-top: -10rem;
 }
 
-.-mt-28{
-  margin-top: -7rem;
-}
-
-.-mt-36{
-  margin-top: -9rem;
-}
-
-.-mt-32{
-  margin-top: -8rem;
+.mt-40{
+  margin-top: 10rem;
 }
 
 .block{
@@ -760,8 +752,8 @@ video {
   height: 100%;
 }
 
-.h-20{
-  height: 5rem;
+.h-28{
+  height: 7rem;
 }
 
 .h-12{
@@ -782,6 +774,10 @@ video {
 
 .h-2{
   height: 0.5rem;
+}
+
+.h-20{
+  height: 5rem;
 }
 
 .h-5{
@@ -808,10 +804,6 @@ video {
   width: 100%;
 }
 
-.w-12{
-  width: 3rem;
-}
-
 .w-7\/12{
   width: 58.333333%;
 }
@@ -834,6 +826,14 @@ video {
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .max-w-6xl{
@@ -908,26 +908,6 @@ video {
 
 .gap-5{
   gap: 1.25rem;
-}
-
-.gap-32{
-  gap: 8rem;
-}
-
-.gap-24{
-  gap: 6rem;
-}
-
-.gap-20{
-  gap: 5rem;
-}
-
-.gap-16{
-  gap: 4rem;
-}
-
-.gap-12{
-  gap: 3rem;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]){
@@ -1242,14 +1222,6 @@ video {
     margin-top: 2.5rem;
   }
 
-  .sm\:-mt-24{
-    margin-top: -6rem;
-  }
-
-  .sm\:-mt-32{
-    margin-top: -8rem;
-  }
-
   .sm\:block{
     display: block;
   }
@@ -1272,6 +1244,18 @@ video {
 
   .sm\:h-72{
     height: 18rem;
+  }
+
+  .sm\:h-80{
+    height: 20rem;
+  }
+
+  .sm\:w-12{
+    width: 3rem;
+  }
+
+  .sm\:w-10{
+    width: 2.5rem;
   }
 
   .sm\:grid-cols-5{
@@ -1308,24 +1292,12 @@ video {
     bottom: -20rem;
   }
 
-  .md\:-bottom-96{
-    bottom: -24rem;
-  }
-
   .md\:-bottom-72{
     bottom: -18rem;
   }
 
-  .md\:-bottom-60{
-    bottom: -15rem;
-  }
-
-  .md\:-bottom-52{
-    bottom: -13rem;
-  }
-
-  .md\:-bottom-64{
-    bottom: -16rem;
+  .md\:-bottom-96{
+    bottom: -24rem;
   }
 
   .md\:mt-3{
@@ -1352,8 +1324,8 @@ video {
     height: 0.75rem;
   }
 
-  .md\:w-5\/12{
-    width: 41.666667%;
+  .md\:w-4\/12{
+    width: 33.333333%;
   }
 
   .md\:w-3\/12{
@@ -1376,12 +1348,16 @@ video {
     width: 58.333333%;
   }
 
-  .md\:w-4\/12{
-    width: 33.333333%;
-  }
-
   .md\:w-2\/12{
     width: 16.666667%;
+  }
+
+  .md\:w-5\/12{
+    width: 41.666667%;
+  }
+
+  .md\:w-1\/12{
+    width: 8.333333%;
   }
 
   .md\:grid-cols-2{
@@ -1448,11 +1424,6 @@ video {
   .md\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .md\:py-36{
-    padding-top: 9rem;
-    padding-bottom: 9rem;
   }
 
   .md\:text-xl{
