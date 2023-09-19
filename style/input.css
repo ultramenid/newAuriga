@@ -30,16 +30,22 @@
   }
 
   .bg-auriga-hijau{
-    background-color: #01303c;
+    background-color: #264C16;
   }
   .bg-auriga-biru{
-    background-color: #007580;
+    background-color: #264C16;
   }
   .text-auriga-biru{
-    color: #007580;
+    color: #264C16;
   }
   .text-auriga-hijau{
-    color: #01303c;
+    color: #264C16;
+  }
+  .border-auriga-biru{
+    border-color: #264C16;
+  }
+  .text-auriga-merah{
+    color: #C32C36;
   }
 
   .w-99 {

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link href="style/ouput.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+   
+    <title>2</title>
+</head>
+<body class="font-judul">
+    <!-- {{-- nav mobile --}} -->
+    <header class="bg-auriga-biru sticky top-0 z-50">
+        <div x-data="{ open: false }" class="px-6 py-4 bg-auriga-biru z-10 sm:hidden block">
+            <div class="flex justify-between items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white " viewBox="0 0 20 20" fill="currentColor" @click="open = true">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                  </svg>
+
+                  <div class="flex space-x-1 text-auriga-biru text-sm">
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-auriga-hijau font-bold @endif">EN</a>
+                    <div class="border-l border-auriga-biru"></div>
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-auriga-hijau font-bold @endif ">ID</a>
+                </div>
+            </div>
+            
+
+            <div class="fixed w-3/4 h-screen z-50 bg-auriga-biru inset-0 overflow-y-auto " x-show="open"
+            x-transition:enter="transition-all transform ease-out"
+            x-transition:enter-start="-translate-x-1/2 opacity-0"
+            x-transition:enter-end="translate-x-0 opacity-100"
+            x-transition:leave="transition-all transform ease-in"
+            x-transition:leave-start="translate-x-0 opacity-100"
+            x-transition:leave-end="-translate-x-1/2 opacity-0"
+            @click.outside="open = false"
+            x-cloak style="display: none !important">
+                <button class="absolute px-6 py-4 focus:outline-none text-white" @click="open = false">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " fill="white" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                </button>
+
+                <div class="mt-16 space-y-3">
+                    <div class=" px-6">
+                        <a href="https://auriga.or.id/"   class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">home<a>
+                        <p class="border-b border-gray-300"></p>
+                    </div>
+                    <div class=" px-6">
+                        <a href="https://auriga.or.id/who_we_are"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">who we are<a>
+                        <p class="border-b border-gray-300"></p>
+                    </div>
+                    <div class=" px-6">
+                        <a href="#"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">our work<a>
+                        <p class="border-b border-gray-300"></p>
+                    </div>
+                    <div class=" px-6">
+                        <a href="https://auriga.or.id/resources/report"  class="mb-4 px-4 inline-block  leading-5 text-white text-xl font-semibold ">resources<a>
+                        <p class="border-b border-gray-300"></p>
+                    </div>
+                    
+
+                    <div class="px-6 flex space-x-2 text-white  text-sm  bottom-10 fixed z-30">
+                        <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-white font-bold @endif">english</a>
+                        <div class="border-l border-gray-300"></div>
+                        <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-white font-bold @endif ">indonesia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 -py-2 sm:block hidden">
+            <div class="flex justify-between px-3">
+                <a></a>
+            </div>
+        </div>
+    </header>
+    <!-- nav pc -->
+    <section class="md:h-v90 h-full relative z-10">
+        <div class="container mx-auto relative">
+            <div class="sm:flex hidden justify-end mt-6">
+                <div class="flex space-x-1 text-auriga-biru text-sm">
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-auriga-hijau font-bold @endif">EN</a>
+                    <div class="border-l border-auriga-biru"></div>
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-auriga-hijau font-bold @endif ">ID</a>
+                </div>
+            </div>
+            <header class="md:flex items-center justify-between w-full mb-6 hidden">
+                <!-- logo -->
+                <a href="#" class="w-full">
+                    <img src="assets/logoauriga.png" alt="Auriga Nusantara" class="h-16">
+                </a>
+
+                <!-- navigation -->
+                <nav class="flex justify-end w-full space-x-3 text-auriga-biru">
+                    <div @click.away="open = false" class="" x-data="{ open: false }">
+                        <button @click="open = !open" class="cursor-pointer py-2  flex items-center  rounded px-4">
+                            <a  class="text-xl font-bold">who we are</a>
+                          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 items-center mt-1 ml-1 transition-transform duration-200 transform "><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        <div x-show="open" style="display: none !important;" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute  w-full  origin-top-right mt-1  shadow-lg md:w-48 z-30">
+                          <div class="  bg-gray-100 dark:bg-newgray-700   shadow ">
+                            <a class=" block px-4 py-1 mt-2 text-sm  bg-transparent   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Link</a>
+                          </div>
+        
+                          <div class="  bg-gray-100 dark:bg-newgray-800  shadow ">
+                            <a class=" block px-4 py-1 mt-2 text-sm  bg-transparent   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Link</a>
+                          </div> 
+                        </div>
+                    </div>
+                    <div @click.away="open = false" class="" x-data="{ open: false }">
+                        <button @click="open = !open" class="cursor-pointer py-2  flex items-center   rounded px-4">
+                            <a  class="text-xl font-bold">our work</a>
+                          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 items-center mt-1 ml-1 transition-transform duration-200 transform "><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        <div x-show="open" style="display: none !important;" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute  w-full  origin-top-right mt-1  shadow-lg md:w-48 z-30">
+                          <div class="  bg-gray-100 dark:bg-newgray-700   shadow ">
+                            <a class=" block px-4 py-1 mt-2 text-sm  bg-transparent   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Link</a>
+                          </div>
+        
+                          <div class="  bg-gray-100 dark:bg-newgray-800  shadow ">
+                            <a class=" block px-4 py-1 mt-2 text-sm  bg-transparent   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Link</a>
+                          </div> 
+                        </div>
+                    </div>
+                    <div @click.away="open = false" class="" x-data="{ open: false }">
+                        <button @click="open = !open" class="cursor-pointer py-2  flex items-center  rounded px-4">
+                            <a  class="text-xl font-bold">resources</a>
+                          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 items-center mt-1 ml-1 transition-transform duration-200 transform "><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        <div x-show="open" style="display: none !important;" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute  w-full  origin-top-right mt-1  shadow-lg md:w-48 z-30">
+                          <div class="  bg-gray-100 dark:bg-newgray-700   shadow ">
+                            <a class=" block px-4 py-1 mt-2 text-sm  bg-transparent   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Link</a>
+                          </div>
+        
+                          <div class="  bg-gray-100 dark:bg-newgray-800  shadow ">
+                            <a class=" block px-4 py-1 mt-2 text-sm  bg-transparent   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Link</a>
+                          </div> 
+                        </div>
+                    </div>
+                    
+                </nav>
+            </header>
+
+            <div class="">
+                <img src="assets/hero2.jpg" alt="" class="w-full md:h-hero sm:h-full h-50  object-cover md:mt-3 mt-0 relative">
+            </div>
+
+            <div class="absolute bottom-36 left-24 text-white">
+                <a class="text-xl mb-4">Our Mission</a>
+                <div class="w-8/12">
+                    <p class="text-3xl font-bold">Mendorong pelibatan komunitas lokal dalam pengelolaan sumberdaya alam dan lingkungan melalui pendekatan-pendekatan kesejahteraan dan konservasi.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+
+    </section>
+    
+    
+    
+
+    
+    <!-- footer -->
+    <footer class="bg-gray-200 py-4 mt-4 px-4">
+        <!-- socmed -->
+        <div class="container mx-auto flex md:flex-row flex-col md:space-y-0 space-y-10 justify-between items-center mb-6">
+            <div class="w-full flex md:justify-start justify-center">
+                <img src="assets/logoauriga.png" alt="Auriga Nusantara" class="h-16">
+            </div>
+            <nav class="md:space-y-0 space-y-2 flex md:flex-row flex-col  md:justify-end  justify-center w-full space-x-4 items-center  text-auriga-biru">
+                <div class="flex md:space-x-2 space-x-1">
+                    <a href="mailto:info@auriga.or.id" class="text-sm">Contact</a>
+                    <a href="#" class="text-sm">|</a>
+                    <a href="#" class="text-sm">Subscribe</a>
+                </div>
+                
+                <div class="flex space-x-2">
+                    <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                        <a href="https://www.instagram.com/auriga_id/">
+                            <img src="assets/ig.png" alt="" class="w-5 h-5">
+                        </a>
+                    </div>
+                    <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                        <a href="https://www.facebook.com/auriganusantara">
+                            <img src="assets/facebook.svg" alt="" class="w-5 h-5">
+                        </a>
+                    </div>
+                    <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                        <a href="https://mobile.twitter.com/aurigaorid">
+                            <img src="assets/twitter.svg" alt="" class="w-5 h-5">
+                        </a>
+                    </div>
+                    <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                        <a href="https://www.tiktok.com/@auriga_id">
+                            <img src="assets/tiktok.png" alt="" class="w-5 h-5">
+                        </a>
+                    </div>
+                    <div class=" bg-black rounded-full border border-black px-2 py-2 flex items-center">
+                        <a href="https://www.linkedin.com/company/auriga-nusantara/">
+                            <img src="assets/linkedin.png" alt="" class="w-5 h-5">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container mx-auto flex md:flex-row flex-col justify-between w-full md:space-y-0 space-y-4">
+            <p class="text-md md:w-7/12 w-full  text-auriga-biru">a data-driven advocacy and provocative think tank organization that works in forestry, species conservation, agriculture, and mining & energy that also combines law enforcement and public awareness in its approach
+            </p>
+            <nav class="flex md:justify-end justify-start w-full md:space-x-10 space-x-4 items-end  text-auriga-biru">
+                <div class="">
+                    <a href="#" class="md:text-xl text-sm font-bold">who we are</a>
+
+                    <div class="flex flex-col mt-2">
+                        <a>sub sub</a>
+                        <a>sub sub</a>
+                        <a>sub sub</a>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="md:text-xl text-sm font-bold">our work</a>
+
+                    <div class="flex flex-col mt-2">
+                        <a>sub sub</a>
+                        <a>sub sub</a>
+                        <a>sub sub</a>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="md:text-xl text-sm font-bold">resources</a>
+
+                    <div class="flex flex-col mt-2">
+                        <a>sub sub</a>
+                        <a>sub sub</a>
+                        <a>sub sub</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+
+    <!-- goUp -->
+    <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
+        <div class="fixed z-50 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })">
+            <div class="sm:px-4 px-2 sm:py-4 py-2 border border-white  bg-auriga-biru flex items-center justify-center">
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                  </svg>
+                  
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
