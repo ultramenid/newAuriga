@@ -55,17 +55,17 @@
 </head>
 <body class="font-judul">
     <!-- {{-- nav mobile --}} -->
-    <header class="bg-auriga-biru sticky top-0 z-50">
-        <div x-data="{ open: false }" class="px-6 py-4 bg-auriga-biru z-10 sm:hidden block">
+    <header class="bg-auriga-biru sticky top-0 z-20">
+        <div x-data="{ open: false }" class="px-4 py-3 bg-auriga-biru z-10 sm:hidden block">
             <div class="flex justify-between items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white " viewBox="0 0 20 20" fill="currentColor" @click="open = true">
                     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                   </svg>
 
-                  <div class="flex space-x-1 text-auriga-biru text-sm">
-                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-auriga-hijau font-bold @endif">EN</a>
-                    <div class="border-l border-auriga-biru"></div>
-                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-auriga-hijau font-bold @endif ">ID</a>
+                  <div class="flex gap-2 z-50">
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-white font-bold @endif">EN</a>
+                    <div class="border-l border-white"></div>
+                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-white font-bold @endif ">ID</a>
                 </div>
             </div>
             
@@ -249,10 +249,10 @@
                             <div class="flex space-x-4 mt-6 items-center text-gray-500">
                                 <h1 class="font-semibold md:text-xl text-md">event</h1>
                             </div>
-                            <h1 class="mt-6 sm:text-3xl text-xl font-bold  text-auriga-biru">Rilis data terbaru pulpwood dalam TraseEarth
-                            </h1>
+                            <a href="https://www.youtube.com/live/EtQ_6y3CG5g?si=N1vHo-CmObXZ93q0" class="mt-6 sm:text-3xl text-xl font-bold  text-auriga-biru">Rilis data terbaru pulpwood Indonesia dalam TraseEarth
+                            </a>
                             <div class="mt-6  text-auriga-biru">
-                                <a class="font-bold">28 November</a><span> | </span><a>Memaparkan rantai pasok industri pulp Indonesia. Termasuk deforestasi, emisi, dan keberadaannya di lahan gambut.
+                                <a class="font-bold"><i>28 Nov 2023</i></a><span> | </span><a>Kontras dengan deforestasi nasional, deforestasi oleh industri pulp Indonesia justru meningkat drastis: meningkat lima kali lipat. Keberadaannya di area gambut berakibat emisinya sedemikian tinggi, bahkan setara emisi Selandia Baru. Data-data ini, berikut rantai pasok industri pulp Indonesia, tersedia dalam TraseEarth.
                                 </a>
                             </div>
                             
@@ -275,10 +275,11 @@
                             <h1 class="font-semibold md:text-xl text-md">activities</h1>
                         </div>
                         <h1 class="mt-6 md:text-3xl text-xl font-bold  text-auriga-biru">
-                            <a href="https://auriga.or.id/activities/detail/62/zoominar-brin-14-pemanfaatan-dan-ekspor-satwa-liar-di-indonesia?lang=id">ZOOMINAR BRIN #14: PEMANFAATAN DAN EKSPOR SATWA LIAR DI INDONESIA</a>
+                            <a href="https://auriga.or.id/activities/detail/62/zoominar-brin-14-pemanfaatan-dan-ekspor-satwa-liar-di-indonesia?lang=id">Zoominar BRIN #14: Pemanfaatan dan ekspor satwa liar di Indonesia
+                            </a>
                         </h1>
                         <div class="mt-6  text-auriga-biru">
-                            <a class="font-bold">September 2022</a><span> | </span><a>Kegiatan zoominar ke-14, bertema Pemanfaatan dan Ekspor Satwa Liar di Indonesia, pada 19 September 2023 di Kawasan Sains dan Teknologi Soekarno BRIN. Seminar ini dihadiri oleh Auriga Nusantara dan 40 periset dari Pusat Riset Zoologi Terapan Badan Riset dan Inovasi Nasional (BRIN).</a>
+                            <a class="font-bold"><i>Sept 2023</i></a><span> | </span><a>Pada diskusi hibrid yang diikuti 40 periset Pusat Zoolog Terapan BRIN ini Auriga Nusantara memaparkan ekspor satwa liar Indonesia yang diduga banyak bersumber dari pemanenan alam. Diharapkan menjadi embrio kerja sama BRIN dengan Auriga Nusantara perihal konservasi satwa.</a>
                         </div>
                     </div>
                 </div>
@@ -296,11 +297,14 @@
                 <img src="https://i.ytimg.com/vi/8Bicu7p6ZgY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDFs70iYak77WM2yZI4B9dnyl3sBg" alt="" class="w-full sm:h-96 h-full object-cover z-20">
             </div>
             <div class="px-10 sm:col-span-2 col-span-1">
+                <div class="flex space-x-4 mt-6  items-center text-white">
+                    <h1 class="font-semibold md:text-xl text-md">Launching</h1>
+                </div>
                 <h1 class=" mt-5 sm:text-3xl text-xl font-bold text-white">
-                    <a href="https://www.youtube.com/watch?v=8Bicu7p6ZgY">Launching Mapbiomas Indonesia Koleksi 2.0: Learning from the past for the future.</a>
+                    <a href="https://www.youtube.com/watch?v=8Bicu7p6ZgY">Koleksi 2.0 MapBiomas Indonesia                    </a>
                 </h1>
                 <div class=" mt-5 text-white">
-                    <a class="font-bold">Otober 2023</a><span> | </span><a> Setelah sukses meluncurkan Mapbiomas Koleksi 1.0, kini Mapbiomas akan kembali meluncurkan Koleksi 2.0 yang menghadirkan 11 dinamika tutupan lahan di Indonesia sejak 2000-2022. </a>
+                    <a class="font-bold"><i>Oct 2023</i></a><span> | </span><a> Telah diuji akurasi oleh 10 universitas dari Aceh hingga Papua, Koleksi 2.0 ini menyajikan data dan peta 11 kelas tutupan lahan di Indonesia, seperti hutan alam, mangrove, tambak, kebun kayu, sawit, sawah, lubang tambang. Tahun demi tahun, pun transisi antar-kelas tutupan, sejak 2000 hingga 2022. </a>
                 </div>
             </div>
         </div>
@@ -363,7 +367,7 @@
     </div>
 
     <!-- reports -->
-    <div class="md:py-20 py-4 max-w-6xl mx-auto px-4">
+    <div class="mb-20 py-4 max-w-6xl mx-auto px-4">
         <div class="w-full flex justify-between items-center text-auriga-biru">
             <h1 class="font-verybold md:text-5xl text-xl">reports</h1>
             
@@ -373,23 +377,23 @@
            <!-- card -->
            <div class="flex-shrink-0 snap-center sm:w-3/12 w-9/12 shadow-xl">
                 <a href="https://auriga.or.id/flipbooks/report/en/92">
-                    <img  class=" sm:h-80 h-full shadow-xl" src="https://auriga.or.id/cms/uploads/library/2/3/2/232.jpg" alt="Auriga Nusantara">
+                    <img  class="h-80 shadow-xl" src="https://auriga.or.id/cms/uploads/library/2/3/2/232.jpg" alt="Auriga Nusantara">
                 </a>
            </div>
             
            <div class="flex-shrink-0 snap-center sm:w-3/12 w-9/12 shadow-xl">
                 <a href="https://auriga.or.id/flipbooks/report/en/91">
-                    <img  class=" sm:h-80 h-full shadow-xl" src="https://auriga.or.id/cms/uploads/library/2/2/9/229.jpg" alt="Auriga Nusantara">
+                    <img  class="h-80 shadow-xl" src="https://auriga.or.id/cms/uploads/library/2/2/9/229.jpg" alt="Auriga Nusantara">
                 </a>
             </div>
             <div class="flex-shrink-0 snap-center sm:w-3/12 w-9/12 shadow-xl">
                 <a href="https://auriga.or.id/flipbooks/report/en/89">
-                    <img  class=" sm:h-80 h-full shadow-xl" src="https://auriga.or.id/cms/uploads/library/2/1/3/213.png" alt="Auriga Nusantara">
+                    <img  class="h-80 shadow-xl" src="https://auriga.or.id/cms/uploads/library/2/1/3/213.png" alt="Auriga Nusantara">
                 </a>
             </div>
             <div class="flex-shrink-0 snap-center sm:w-3/12 w-9/12 shadow-xl">
                 <a href="https://auriga.or.id/flipbooks/report/en/86">
-                    <img  class=" sm:h-80 h-full shadow-xl" src="https://auriga.or.id/cms/uploads/library/2/0/9/209.png" alt="Auriga Nusantara">
+                    <img  class="h-80 shadow-xl" src="https://auriga.or.id/cms/uploads/library/2/0/9/209.png" alt="Auriga Nusantara">
                 </a>
             </div>
 
