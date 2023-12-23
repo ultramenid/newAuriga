@@ -6,6 +6,9 @@
 @tailwind utilities;
 
 
+.bg-red-auriga{
+  background-color: #C32C36;
+}
 
 .selection-bg ::selection {
   background-color: #C32C36;
