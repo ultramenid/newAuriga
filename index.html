@@ -40,7 +40,7 @@
     <meta property="og:site_name" content="Auriga Nusantara" />
     <meta property="article:tag" content="sawit, Auriga Nusantara, Auriga Nusantara, sawit indonesia" />
     <link href="style/ouput.css" rel="stylesheet">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="style/alpine.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-50C30PVFRB"></script>
 
@@ -53,7 +53,7 @@
     </script>
     <title>1</title>
 </head>
-<body class="font-judul">
+<body class="font-judul selection-bg">
     <!-- {{-- nav mobile --}} -->
     <header class="bg-auriga-biru sticky top-0 z-20">
         <div x-data="{ open: false }" class="px-4 py-3 bg-auriga-biru z-10 sm:hidden block">
@@ -63,7 +63,7 @@
                   </svg>
 
                   <div class="flex gap-2 z-50">
-                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-white font-bold @endif">EN</a>
+                    <a href="#"  class="cursor-pointer  font-black">EN</a>
                     <div class="border-l border-white"></div>
                     <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-white font-bold @endif ">ID</a>
                 </div>
@@ -140,7 +140,7 @@
         <div class="container mx-auto relative">
             <div class="sm:flex hidden justify-end mt-6">
                 <div class="flex space-x-1 text-auriga-biru text-sm">
-                    <a href="#"  class="cursor-pointer @if(App::getLocale() == 'en') text-auriga-hijau font-bold @endif">EN</a>
+                    <a href="#"  class="cursor-pointer font-black">EN</a>
                     <div class="border-l border-auriga-biru"></div>
                     <a href="#"  class="cursor-pointer @if(App::getLocale() == 'id') text-auriga-hijau font-bold @endif ">ID</a>
                 </div>
@@ -210,9 +210,9 @@
                     <h1 class="font-semibold md:text-xl text-md">press release</h1>
                    
                 </div>
-                <h1 class="md:mt-6 mt-2 md:text-2xl text-xl font-bold  "><a href="https://auriga.or.id/press_release/detail/48/complaint-calling-on-the-forest-stewardship-council-to-acknowledge-paper-excellences-connection-to-asia-pulp-paper">Complaint calling on the Forest Stewardship Council to acknowledge Paper Excellence's connection to Asia Pulp & Paper</a></h1>
+                <h1 class="md:mt-6 mt-2 md:text-2xl text-xl font-bold  "><a href="https://auriga.or.id/press_release/detail/48/complaint-calling-on-the-forest-stewardship-council-to-acknowledge-paper-excellences-connection-to-asia-pulp-paper">NGO Joint Petition to Cease the usage of Biomass in the Fashion Industry</a></h1>
                 <div class="mt-4">
-                    <a>Auriga Nusantara and Greenpeace Canada are complaint on the Forest Stewardship Council to apply its policies firmly and disassociate itself from APP-Sinar Mas affiliated Paper Excellence.</a>
+                    <a>deskripsi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque officia recusandae iure expedita aliquam perferendis nostrum, repellendus maiores voluptas saepe molestias enim. Rem suscipit odio architecto. Ut impedit cupiditate quasi!.</a>
                 </div>
                 <a href="https://auriga.or.id/press_release/detail/48/complaint-calling-on-the-forest-stewardship-council-to-acknowledge-paper-excellences-connection-to-asia-pulp-paper" class=" rounded-full md:mt-6 mt-4 border-white border h-12 w-12 md: items-center px-4 py-4 hidden">
                     <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
@@ -222,8 +222,8 @@
                 </a>
             </div>
         </div>
-        <div class="absolute   md:-bottom-72 -bottom-15 right-0   text-white md:w-3/12 w-7/12">
-            <img src="assets/elemen.png" alt="auriga nusantara" class="sm:z-10 z-30">
+        <div class="absolute   md:-bottom-40 -bottom-15 right-0   text-white md:w-3/12 w-7/12">
+            <img src="assets/elemen.png" alt="auriga nusantara" class="sm:z-40 z-30">
         </div>
 
     </section>
@@ -315,6 +315,30 @@
     <div class="md:py-36 py-28 ">
         <div class="px-4 max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 sm:gap-10 gap-36">
             <!-- card -->
+           <div class=" sm:px-6 px-0 bg-gray-100 py-6 ">
+            <div class="card">
+                <div class="card-header flex justify-center mx-4 -mt-24 ">
+                    <img
+                        class="sm:w-99 w-full sm:h-64 h-48 object-cover"
+                        src="https://auriga.or.id/cms/uploads/library/2/3/4/234.jpg"
+                        alt="tailwind-card-image"
+                    />
+                </div>
+                <div class="card-body  md:w-96 w-full px-7">
+                    <div class="flex space-x-4 mt-6  items-center text-gray-500">
+                        <a  class="font-semibold sm:text-xl text-sm">press release</a>
+                    </div>
+                    <h1 class="mt-6 md:text-3xl text-xl font-bold  text-auriga-biru">
+                        <a href="https://auriga.or.id/press_release/detail/48/complaint-calling-on-the-forest-stewardship-council-to-acknowledge-paper-excellences-connection-to-asia-pulp-paper">Complaint calling on the Forest Stewardship Council to acknowledge Paper Excellence's connection to Asia Pulp & Paper
+                        </a>
+                    </h1>
+                    <div class="mt-6  text-auriga-biru">
+                        <a class="font-bold">Nov 2023</a><span> | </span><a>Critical, Javan Rhinos Need Strategic Yet Effective Intervention To Strive For Sustainability Of The Javan Rhinoceros Conservation.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- card -->
             <div class=" sm:px-6 px-0 bg-gray-100 py-6 ">
                 <div class="card">
                     <div class="card-header flex justify-center mx-4 -mt-24 ">
@@ -339,30 +363,7 @@
                 </div>
             </div>
 
-           <!-- card -->
-           <div class=" sm:px-6 px-0 bg-gray-100 py-6 ">
-            <div class="card">
-                <div class="card-header flex justify-center mx-4 -mt-24 ">
-                    <img
-                        class="sm:w-99 w-full sm:h-64 h-48 object-cover"
-                        src="https://pasopati.id/uploads/artikel/1691661731_64d4b5a345f81.png"
-                        alt="tailwind-card-image"
-                    />
-                </div>
-                <div class="card-body  md:w-96 w-full px-7">
-                    <div class="flex space-x-4 mt-6  items-center text-gray-500">
-                        <a href="https://pasopati.id" class="font-semibold sm:text-xl text-sm">pasopati.id</a>
-                    </div>
-                    <h1 class="mt-6 md:text-3xl text-xl font-bold  text-auriga-biru">
-                        <a href="https://pasopati.id/expose/badak-jawa-langkah-mundur-konservasi-di-ujung-kulon-2023">Javan Rhino: Conservation Setbacks in Ujung Kulon National Park (2023)
-                        </a>
-                    </h1>
-                    <div class="mt-6  text-auriga-biru">
-                        <a class="font-bold">June 2023</a><span> | </span><a>Critical, Javan Rhinos Need Strategic Yet Effective Intervention To Strive For Sustainability Of The Javan Rhinoceros Conservation.</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+           
         </div>
     </div>
 
@@ -425,12 +426,12 @@
     <!-- microsites -->
     <div class="container  mx-auto px-4 sm:grid hidden x md:grid-cols-7 grid-cols-1 gap-5">
         <div class="col-span-1 px-4 py-4 bg-gray-200 grid place-items-center">
-            <img src="assets/environmentaldefender.png" alt="Environmental Defender" class="md:h-full h-24 ">
+            <img src="assets/environmentaldefender.png" alt="Environmental Defender" class=" h-24 ">
             <p class="text-xs">Mendokumentasikan ancaman terhadap pembela lingkungan. Kolam informasi yang relevan untuk peningkatan keselamatan environmental defender.</p>
         </div>
 
         <div class="col-span-1 px-4 py-4 bg-gray-200 grid place-items-center">
-            <img src="assets/rawakadut.png" alt="Rawa Kadut" class="md:h-full h-24">
+            <img src="assets/rawakadut.png" alt="Rawa Kadut" class=" h-24">
             <p class="text-xs">Reforestasi padang ilalang di tengah Taman Nasional Way Kambas. Demi pemeliharaan dan perluasan habitat spesies ikoniknya, seperti gajah, harimau, badak.</p>
         </div>
         <div class="col-span-1 px-4 py-4 bg-gray-200 grid place-items-center">
@@ -443,20 +444,20 @@
         </div>
        
         <div class="col-span-1 px-4 py-4 bg-gray-200 grid place-items-center">
-            <img src="assets/quitcoal.png" alt="Auriga Nusantara" class="md:h-full h-16">
+            <img src="assets/quitcoal.png" alt="Auriga Nusantara" class=" h-16">
             <p class="text-xs">Mendorong Indonesia keluar dari energi kotor batubara. Berisi perkembangan target tersebut, termasuk pembelajaran terkait dari negara lain.</p>
         </div>
         
        
 
         <div class="col-span-1 px-4 py-4 bg-gray-200 grid place-items-center">
-            <img src="assets/sawitinfo.png" alt="Sawit Info" class="md:h-full h-16">
+            <img src="assets/sawitinfo.png" alt="Sawit Info" class=" h-16">
             <p class="text-xs">Ruang informasi, diskursus, dan dialog persawitan. Mendorong pemajuan dan pertukaran pengetahuan demi peningkatan kredibilitas sawit Indonesia</p>
         </div>
 
         
         <div class="col-span-1 px-4 py-4 bg-gray-200 grid place-items-center">
-            <img src="https://gakkum-sda.id/img/logo/Footer-04.png" alt="Auriga Nusantara" class="md:h-full h-24">
+            <img src="https://gakkum-sda.id/img/logo/Footer-04.png" alt="Auriga Nusantara" class=" h-24">
             <p class="text-xs">Suara kritis dan tunjuk-hidung mengenai kehutanan, persawitan, dan pertambangan demi mengeliminir praktik dan kebijakan destruktif terhadap biodiversitas.</p>
         </div>
         
@@ -501,7 +502,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="bg-gray-200 py-4 mt-4 px-4">
+    <footer class="bg-gray-200 py-4 mt-4 px-4 z-50 relative">
         <!-- socmed -->
         <div class="container mx-auto flex md:flex-row flex-col md:space-y-0 space-y-10 justify-between items-center mb-6">
             <div class="w-full flex md:justify-start justify-center">
@@ -572,7 +573,7 @@
 
     <!-- goUp -->
     <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
-        <div class="fixed z-50 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+        <div class="fixed z-40 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
             top: 0,
             left: 0,
             behavior: 'smooth'

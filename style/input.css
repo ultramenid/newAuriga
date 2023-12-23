@@ -7,6 +7,10 @@
 
 
 
+.selection-bg ::selection {
+  background-color: #C32C36;
+  color: white;
+}
 
 @layer utilities {
     .h-v90 {
