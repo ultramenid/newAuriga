@@ -7,7 +7,7 @@
 
 
 .bg-red-auriga{
-  background-color: #C32C36;
+  background-color: #C32C36 !important;
 }
 
 .selection-bg ::selection {
